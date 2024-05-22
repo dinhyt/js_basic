@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example1</title>
+    <script src="ex1.js"></script>
+    <script src="ex2.js"></script>
+    <script src="ex3.js"></script>
+    <script src="ex4.js"></script>
+    <script src="ex5.js"></script>
+    <script src="ex6.js"></script>
+    <script src="ex7.js"></script>
+    <script src="ex8.js"></script>
+    <script src="ex9.js"></script>
+    <script src="ex10.js"></script>
+    <script src="ex11.js"></script>
+    <script src="ex12.js"></script>
+    <script src="ex13.js"></script>
+    <script src="ex14.js"></script>
+</head>
+<body>
+    <div>
+        <p>ex1: nhập vào 2 số xem số a có chia hết cho số b không</p>
+        <input type="number" id="a" placeholder="nhập vào a">
+        <input type="number" id="b" placeholder="nhập vào b">
+        <button onclick="isDivision()">check</button>
+        <p id="ex1"></p>
+    </div>
+    <div>
+        <p>ex2: nhập vào tuổi xem học sinh có đủ tuổi để vào lớp 10 hay không</p>
+        <input type="number" id="age" placeholder="nhập vào tuổi">
+        <button onclick="checkAge()">check</button>
+        <p id="ex2"></p>
+    </div>
+    <div>
+        <p>ex3: nhập vào số nguyên bất kỳ vào xem số đó có lớn hơn không hay không</p>
+        <input type="number" id="number" placeholder="number">
+        <button onclick="checkNumber()">check</button>
+        <p id="ex3"></p>
+    </div>
+    <div>
+        <p>ex4: nhập vào 3 số tìm số lớn nhất trong 3 số</p>
+        <input type="number" id="n1" placeholder="nhập vào số thứ nhất">
+        <input type="number" id="n2" placeholder="nhập vào số thứ hai">
+        <input type="number" id="n3" placeholder="nhập vào số thứ ba">
+        <button onclick="checkBiggest()">check</button>
+        <p id="ex4"></p>
+    </div>
+    <div>
+        <p>ex5: từ các điểm kiểm tra, điểm giữa kỳ điểm học kỳ tính xếp loại học lực</p>
+        <input type="text" id="toan" placeholder="nhập vào danh sách 5 điểm toán ngăn cách bởi dấu ,">
+        <input type="text" id="van" placeholder="nhập vào danh sách 5 điểm văn ngăn cách bởi dấu ,">
+        <input type="text" id="anh" placeholder="nhập vào danh sách 5 điểm anh ngăn cách bởi dấu ,">
+        <button onclick="ex5()">check</button>
+        <p id="ex5"></p>
+    </div>
+    <div>
+        <p>ex6: nhập vào 3 số tính xem nó có thể là số đo của 1 hình tam giác hay không</p>
+        <input type="number" id="c1" placeholder="cạnh thứ nhất">
+        <input type="number" id="c2" placeholder="cạnh thứ 2">
+        <input type="number" id="c3"placeholder="cạnh thứ 3">
+        <button onclick="ex6()">check</button>
+        <p id="ex6"></p>
+    </div>
+    <div>
+        <p>ex7: nhập vào 1 số nguyên kiểm tra xem nó có phải tuổi của 1 người hay không</p>
+        <input type="number" id="ageEx7" placeholder="nhập vào tuổi">
+        <button onclick="ex7()">check</button>
+        <p id="ex7"></p>
+    </div>
+    <div>
+        <p>ex8: tính diện tích hình vuông khi biết cạnh của nó</p>
+        <input type="number" id="edge" placeholder="nhập vào độ dài của cạnh">
+        <button onclick="ex8()">check</button>
+        <p id="ex8"></p>
+    </div>
+    <div>
+        <p>ex9: tính diện tích hình chữ nhật khi biết 2 cạnh a, b</p>
+        <input type="number" id="height" placeholder="chiều dài">
+        <input type="number" id="width" placeholder="chiều rộng">
+        <button onclick="ex9()">check</button>
+        <p id="ex9"></p>
+    </div>
+    <div>
+        <p>ex10: tính diện tích hình tam giác vuông khi biết 2 cạnh kề a, b</p>
+        <input type="number" id="side1">
+        <input type="number" id="side2">
+        <button onclick="ex10()">check</button>
+        <p id="ex10"></p>
+    </div>
+    <div>
+        <p>ex11: giải phương trình bậc 1</p>
+        <table>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="aEx11"></td>
+                <td><input type="number" id="bEx11"></td>
+            </tr>
+        </table>
+        <button onclick="ex11()">check</button>
+        <p id="ex11"></p>
+    </div>
+    <div>
+        <p>ex12: giải phương trình bậc 2</p>
+        <table>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="aEx12"></td>
+                <td><input type="number" id="bEx12"></td>
+                <td><input type="number" id="cEx12"></td>
+            </tr>
+        </table>
+        <button onclick="ex12()">check</button>
+        <p id="ex12"></p>
+    </div>
+    <div>
+        <p>ex13: chuyển đổi từ độ c sang độ f</p>
+        <table>
+            <thead>
+                <tr>
+                    <th id="ex13Th1">độ C</th>
+                    <th id="ex13Th2">độ F</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="number" id="ex13Td1"></td>
+                    <td id="ex13Td2"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="toggle" onclick="toggleConversion()">🔄 độ F sang độ C</button>
+        <button onclick="ex13()">Chuyển đổi</button>     
+    </div>
+    <div>
+        <p>ex14: chuyển từ met sang feet</p>
+        <table>
+            <thead>
+                <tr>
+                    <th id="ex14Th1">mét</th>
+                    <th id="ex14Th2">feet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td><input type="number" id="ex14Td1"></td>
+                <td id="ex14Td2"></td>
+            </tbody>
+        </table>
+        <button id="toggleEx14" onclick="toggleConversionEx14()">🔄 feet sang mét</button>
+        <button onclick="ex14()">Chuyển đổi</button>
+    </div>
+</body>
+</html> 

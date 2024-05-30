@@ -34,7 +34,7 @@ const Form = () => {
         }
     };
 
-  return (
+    return (
     <div>
         <div className='form-container'>
             <h2>Đăng ký</h2>
